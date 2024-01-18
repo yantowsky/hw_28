@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6%;
+}
+.product .product__category {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px dashed #929292;
+  gap: 25px;
+}
+.product .product__category .product__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.product .product__category span {
+  font-weight: 700;
+}
+.product .product__category .product__wrap {
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+}
+@media (min-width: 768px) {
+  .product .product__category .product__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .product .product__category .product__wrap {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.product .product__category .product__wrap .product__item {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E4E4E4;
+  border-radius: 5px;
+  gap: 15px;
+}
+.product .product__category .product__wrap .product__item .product__img {
+  width: 40%;
+}
+.product .product__category .product__wrap .product__item .product__name,
+.product .product__category .product__wrap .product__item .product__price {
+  width: 100%;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */

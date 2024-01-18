@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6%;
+
+    .product__category {
+        padding: 25px 0;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px dashed #929292;
+        gap: 25px;
+
+        .product__title {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        .product__wrap {
+            padding: 0 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (min-width: 1024px) {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .product__item {
+                width: 100%;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #E4E4E4;
+                border-radius: 5px;
+                gap: 15px;
+
+                .product__img {
+                    width: 40%;
+                }
+
+                .product__name,
+                .product__price {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
